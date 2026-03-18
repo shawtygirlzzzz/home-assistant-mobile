@@ -1,0 +1,28 @@
+module.exports = {
+  name: "home-assistant-mobile",
+  slug: "home-assistant-mobile",
+  version: "1.0.0",
+  orientation: "portrait",
+  userInterfaceStyle: "light",
+  assetBundlePatterns: [
+    "**/*"
+  ],
+  ios: {
+    supportsTablet: true,
+    bundleIdentifier: "com.yourdomain.homeassistantmobile",
+    buildNumber: "1"
+  },
+  android: {
+    adaptiveIcon: {
+      foregroundImage: "./assets/adaptive-icon.png",
+      backgroundColor: "#ffffff"
+    },
+    package: "com.yourdomain.homeassistantmobile",
+    versionCode: 2
+  },
+  extra: {
+    eas: {
+      projectId: "bce43f24-5195-4833-ba57-a3bd5c5863ba"
+    }
+  }
+}; 
